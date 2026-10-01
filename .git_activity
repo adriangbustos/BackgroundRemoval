@@ -2,3 +2,4 @@
 # Repository Activity Log - BackgroundRemoval
 2026-09-20T15:52:09 | refactor: optimize DirectML pipeline initialization
 2026-09-26T13:50:19 | chore: add benchmark notes for 4K video exports
+2026-10-01T18:07:29 | fix: ensure proper alpha channel export on video frames
