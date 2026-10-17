@@ -8,3 +8,4 @@
 2026-10-06T18:05:38 | style: clean up processing controls and slider layout
 2026-10-12T11:05:14 | chore: add benchmark notes for 4K video exports
 2026-10-12T21:53:55 | perf: tune batch size for inference loop
+2026-10-17T21:52:17 | chore: add benchmark notes for 4K video exports
