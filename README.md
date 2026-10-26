@@ -2,6 +2,10 @@
 
 An AI-powered video matting and background removal tool optimized for **4K UHD (3840x2160)** footage using **RobustVideoMatting (RVM)** and **DirectML GPU acceleration** (compatible with modern NVIDIA RTX Blackwell/Ada/Ampere GPUs as well as AMD and Intel GPUs).
 
+[![Platform](https://img.shields.io/badge/Platform-Windows-0078D6.svg)](#)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB.svg)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-44CC11.svg)](LICENSE)
+
 ---
 
 ## Features
