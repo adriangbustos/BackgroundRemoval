@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller / Build outputs
+build/
+dist/
+*.spec
+
+# Media and Large Test Assets
+*.mp4
+*.mov
+*.webm
+*.avi
+*.mkv
+*.m4v
+sample_refined_frame.png
+
+# Models and Checkpoints (fetched on demand via PyTorch Hub)
+models/*.pth
+models/*.pt
+models/*.onnx
+
+# Agent, Temp and Scratch files
+.agents/
+.gemini/
+
+# Virtual Environments
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store

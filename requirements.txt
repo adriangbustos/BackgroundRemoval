@@ -1,0 +1,16 @@
+# Core PyTorch with DirectML / CUDA
+torch
+torchvision
+torch-directml
+
+# Video & Image processing
+opencv-python>=4.8.0
+imageio>=2.30.0
+imageio-ffmpeg>=0.4.9
+numpy>=1.24.0
+pillow>=10.0.0
+
+# UI & Utilities
+customtkinter>=5.2.0
+darkdetect>=0.8.0
+tqdm>=4.65.0
