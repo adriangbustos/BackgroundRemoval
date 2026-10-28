@@ -13,3 +13,4 @@
 2026-10-25T15:11:37 | fix: ensure proper alpha channel export on video frames
 2026-10-25T17:40:52 | refactor: optimize DirectML pipeline initialization
 2026-10-28T16:26:21 | docs: document GPU acceleration requirements
+2026-10-28T16:42:06 | style: clean up processing controls and slider layout
