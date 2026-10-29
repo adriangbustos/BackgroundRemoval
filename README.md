@@ -1,10 +1,22 @@
-# BackgroundRemoval: 4K AI Video Matting & Background Removal
+<div align="center">
+  <img src="assets/icon.png" width="96" height="96" alt="BackgroundRemoval Icon" />
+  <h1>4K AI Video Background Remover</h1>
+  <p>AI-powered video matting and background removal tool optimized for <b>4K UHD (3840x2160)</b> footage with <b>DirectML GPU acceleration</b></p>
 
-An AI-powered video matting and background removal tool optimized for **4K UHD (3840x2160)** footage using **RobustVideoMatting (RVM)** and **DirectML GPU acceleration** (compatible with modern NVIDIA RTX Blackwell/Ada/Ampere GPUs as well as AMD and Intel GPUs).
+  <p>
+    <img src="https://img.shields.io/badge/Platform-Windows-0078D6.svg" alt="Platform" />
+    <img src="https://img.shields.io/badge/Python-3.10+-3776AB.svg" alt="Python" />
+    <img src="https://img.shields.io/badge/License-MIT-44CC11.svg" alt="License" />
+  </p>
+</div>
 
-[![Platform](https://img.shields.io/badge/Platform-Windows-0078D6.svg)](#)
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB.svg)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-44CC11.svg)](LICENSE)
+---
+
+## Application Preview
+
+<div align="center">
+  <img src="assets/preview.png" alt="4K AI Video Background Remover Preview" width="850" />
+</div>
 
 ---
 
