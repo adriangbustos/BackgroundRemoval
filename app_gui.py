@@ -106,7 +106,7 @@ class QueueApp(ctk.CTk):
 
         # Row 1: Source & Output folders
         row1 = ctk.CTkFrame(self.ctrl_frame, fg_color="transparent")
-        row1.pack(fill="x", padx=12, pady=(12, 6))
+        row1.pack(fill="x", padx=12, pady=(10, 5))
 
         self.btn_add_folder = ctk.CTkButton(
             row1, text="📁 Add Folder of Videos", command=self._on_add_folder, width=170
@@ -125,7 +125,7 @@ class QueueApp(ctk.CTk):
 
         # Output Folder selector
         row2 = ctk.CTkFrame(self.ctrl_frame, fg_color="transparent")
-        row2.pack(fill="x", padx=12, pady=(4, 12))
+        row2.pack(fill="x", padx=12, pady=5)
 
         lbl_out = ctk.CTkLabel(row2, text="Output Directory:", font=ctk.CTkFont(size=13, weight="bold"))
         lbl_out.pack(side="left", padx=(0, 8))
@@ -138,7 +138,7 @@ class QueueApp(ctk.CTk):
 
         # Row 3: Matting Options & Background Replacement Mode
         row3 = ctk.CTkFrame(self.ctrl_frame, fg_color="transparent")
-        row3.pack(fill="x", padx=12, pady=(0, 12))
+        row3.pack(fill="x", padx=12, pady=5)
 
         lbl_mode = ctk.CTkLabel(row3, text="Background Mode:", font=ctk.CTkFont(size=13, weight="bold"))
         lbl_mode.pack(side="left", padx=(0, 8))
@@ -158,11 +158,8 @@ class QueueApp(ctk.CTk):
         self.combo_bg_mode.set("Transparent (.mov ProRes 4444)")
         self.combo_bg_mode.pack(side="left", padx=(0, 12))
 
-        self.custom_bg_asset_frame = ctk.CTkFrame(row3, fg_color="transparent")
-        self.custom_bg_asset_frame.pack(side="left", fill="x", expand=True)
-
         self.btn_pick_asset = ctk.CTkButton(
-            self.custom_bg_asset_frame,
+            row3,
             text="Pick Color...",
             width=130,
             command=self._on_pick_custom_asset,
@@ -171,7 +168,7 @@ class QueueApp(ctk.CTk):
 
         # Row 4: Fine-Tuning (Downsample Ratio & Matte Threshold)
         row4 = ctk.CTkFrame(self.ctrl_frame, fg_color="transparent")
-        row4.pack(fill="x", padx=12, pady=(0, 12))
+        row4.pack(fill="x", padx=12, pady=(5, 10))
 
         lbl_tune = ctk.CTkLabel(row4, text="Fine-Tuning:", font=ctk.CTkFont(size=13, weight="bold"))
         lbl_tune.pack(side="left", padx=(0, 8))
@@ -268,13 +265,13 @@ class QueueApp(ctk.CTk):
 
     def _on_bg_mode_change(self, mode_str: str):
         if "Solid Color" in mode_str:
-            self.btn_pick_asset.pack(side="left")
+            self.btn_pick_asset.pack(side="left", padx=(0, 8))
             self.btn_pick_asset.configure(text="Pick Color...", fg_color="#3A3A3A")
         elif "Custom Image" in mode_str:
-            self.btn_pick_asset.pack(side="left")
+            self.btn_pick_asset.pack(side="left", padx=(0, 8))
             self.btn_pick_asset.configure(text="Browse Image...", fg_color="#3A3A3A")
         elif "Custom Video" in mode_str:
-            self.btn_pick_asset.pack(side="left")
+            self.btn_pick_asset.pack(side="left", padx=(0, 8))
             self.btn_pick_asset.configure(text="Browse Video...", fg_color="#3A3A3A")
         else:
             self.btn_pick_asset.pack_forget()
